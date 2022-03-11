@@ -1,5 +1,5 @@
 // hacemos una validación complicada al pedo, pero solo para usar regular expressions
-// La alternativa era usar una condición radio >= 0 || radio < 100
+// La alternativa era usar una condición radio >= 0 && radio < 100
 const validarRadio = (radio) => {
     let validRegExp = /^([1-9]\d*(\.\d*[1-9][0-9])?)|(0\.\d*[1-9][0-9])|(0\.\d*[1-9])$/
     if (radio < 100) {
