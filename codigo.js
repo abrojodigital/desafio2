@@ -3,7 +3,7 @@
 const validarRadio = (radio) => {
     let validRegExp = /^([1-9]\d*(\.\d*[1-9][0-9])?)|(0\.\d*[1-9][0-9])|(0\.\d*[1-9])$/
     if (validRegExp.test(radio)) {
-        if (radio < 100) {
+        if (radio <= 100) {
             return true
         } else {
             alert("El radio ingresado no es valido porque es mayor a 100 y supera el valor de cálculo")
